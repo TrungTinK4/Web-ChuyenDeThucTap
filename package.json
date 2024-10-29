@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon backend/server.js",
-    "start": "concurrently --kill-others \"npm run dev\" \"npm run start --prefix frontend\""
+    "start": "node backend/server.js",
+    "build": "cd frontend && npm install && npm run build"
   },
   "author": "kiana",
   "eslint.enable": false,
