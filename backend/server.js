@@ -26,11 +26,10 @@ cloudinary.config({
 
 
 // create server
-const PORT = process.env.PORT || 4000;
-
-const server = app.listen(PORT,() =>{
-    console.log(`Server is working on http://localhost:${process.env.PORT}`)
-})
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => {
+  console.log(`Server is working on port ${PORT}`);
+});
 
 
 // Unhandled promise rejection
